@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-windth, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<title>un gato</title>
+</head>
+<body>
+	<header>
+		<h1></h1>
+	</header>
+		<section class="principal">
+			<img src="cat.gif" height="1000" width="1920">
+			<audio id="bg-music" scr="doom.mp3" autoplay playsinline>
+			<source src="doom.mp3" type="audio/mpeg">
+				</audio>
+			<script>
+				window.addEventListener('load', () => {
+					const audio = document.getElementById('bg-music');
+					audio.play().catch((e) => {
+						console.log("Reproduccion bloqueada:", e);
+					});
+				})
+			</script>
+		</section>
+
+	<footer>
+		<p></p>
+	</footer>
+</body>
